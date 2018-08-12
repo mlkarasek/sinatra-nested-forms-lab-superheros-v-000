@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+  <head></head>
+  <body>
+    <form action="/teams" method="post">
+  <p>Team Name: <input type="text" name="team[name]"></p>
+  <p>Team Motto: <input type="text" name="motto"></p>
+  <p>Hero Name: <input type="text" name="team[hero][][name]" id="hero_name_1"></p>
+  <p>Hero Power: <input type="text" name="team[hero][][power]" id="hero_type_1"></p>
+  <p>Hero Biography: <input type="text" name="team[hero][][biography]" id="hero_bio_1"></p>
+  <p>Hero Name: <input type="text" name="team[hero][][name]" id="hero_name_2"></p>
+  <p>Hero Power: <input type="text" name="team[hero][][power]" id="hero_type_2"></p>
+  <p>Hero Biography: <input type="text" name="team[hero][][biography]" id="hero_bio_2"></p>
+  <input type="submit" value="Submit">
+</form>
+
+  </body>
+</html>
