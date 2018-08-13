@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-
 <html>
-  <head></head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Superheros</title>
+  </head>
   <body>
-<h1><%= @team.name %></h1>
 
-<h2>Team Motto: <%= @team.motto %></h2>
+      <h1>Team Name: <%= params["team"]["name"] %></h1>
+      <h2>Team Motto: <%= params["team"]["motto"] %></h2>
+      <h2>Hero Name: <%= params["team"]["members"][0]["name"] %></h2>
+      Hero Power: <%= params["team"]["members"][0]["power"] %><br>
+      Hero Biography: <%= params["team"]["members"][0]["biography"] %><br>
+      <h2>Hero Name: <%= params["team"]["members"][1]["name"] %></h2>
+      Hero Power: <%= params["team"]["members"][1]["power"] %><br>
+      Hero Biography: <%= params["team"]["members"][1]["biography"] %><br>
+      <h2>Hero Name: <%= params["team"]["members"][2]["name"] %></h2>
+      Hero Power: <%= params["team"]["members"][2]["power"] %><br>
+      Hero Biography: <%= params["team"]["members"][2]["biography"] %><br>
 
-<h2>Hero Name: <%= @members.first.name %></h2>
-    <p>Hero Power: <%= @members.first.power%></p>
-    <p>Hero Biography: <%= @members.first.bio%></p>
-
-<h2>Hero Name: <%= @members[1].name %></h2>
-    <p>Hero Power: <%= @members[1].power%></p>
-    <p>Hero Biography: <%= @members[1].bio%></p>
-
-<h2>Hero Name: <%= @members.last.name %></h2>
-    <p>Hero Power: <%= @members.last.power%></p>
-    <p>Hero Biography: <%= @members.last.bio%></p>
   </body>
 </html>
